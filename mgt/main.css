@@ -141,5 +141,54 @@ header.header {
 }
 
 .job-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  grid-auto-rows: 150px;
+  clear: both;
+}
+.job-list h3 {
+  font-weight: bold;
+}
+.job-item {
+  border-radius: 20px;
+  padding: 1rem;
   display: flex;
+}
+.job-item:first-of-type {
+  background-color: var(--primary-dark);
+  color: var(--secondary-light);
+}
+.job-item:first-of-type ~ .job-item {
+  background-color: var(--base-light);
+  color: var(--primary-dark);
+}
+.job-item .info {
+  flex-grow: 1;
+}
+.split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.job-item .profiles {
+  display: flex;
+}
+.job-item .profiles img {
+  width: 30px;
+  height: 30px;
+}
+.job-item .profiles img:not(.job-item .profiles img:last-of-type) {
+  margin-right: -15px;
+}
+.job-item .figure {
+  background-image: url("./fix.svg");
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  margin-right: 1rem;
+  background-repeat: no-repeat;
 }

@@ -16,7 +16,7 @@
   padding-bottom: 1rem;
   background-repeat: no-repeat;
   height: 45vh;
-  box-shadow: 7px -42px 99px 2px rgba(0, 0, 0, 0.73) inset;
+  box-shadow: 7px -42px 99px 2px rgba(0, 0, 0, 0.8) inset;
 }
 .festival-data {
   display: flex;
@@ -64,4 +64,20 @@ p + h4 {
 }
 .tag {
   color: #fff;
+}
+.toppane {
+  display: flex;
+}
+.toppane .right-pane {
+  margin-left: auto;
+}
+[class*="-pane"] {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+[class*="-pane"] span {
+  margin-right: 1rem;
+  cursor: pointer;
+  text-align: center;
 }

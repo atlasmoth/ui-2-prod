@@ -59,10 +59,11 @@ small {
   background: var(--base-dark);
   width: 100%;
   max-width: 480px;
-  margin: auto auto;
+  margin: 0px auto;
   padding: 1rem;
   min-height: 100vh;
   position: relative;
+  padding-top: 0px;
 }
 .info {
   padding: 1rem;

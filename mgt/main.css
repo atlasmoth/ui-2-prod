@@ -146,6 +146,7 @@ header.header {
   grid-gap: 1rem;
   grid-auto-rows: 150px;
   clear: both;
+  margin-bottom: 1rem;
 }
 .job-list h3 {
   font-weight: bold;
@@ -191,4 +192,64 @@ header.header {
   height: 70px;
   margin-right: 1rem;
   background-repeat: no-repeat;
+}
+.calendar {
+  display: flex;
+  padding: 1fr;
+  background-color: var(--base-light);
+  border-radius: 10px;
+}
+.maps {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  flex-grow: 1;
+}
+.map-item {
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  box-shadow: 10px 2px 70px -30px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 10px 2px 70px -30px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 10px 2px 70px -30px rgba(0, 0, 0, 0.55);
+  margin-bottom: 2rem;
+}
+.map-item .info {
+  flex-grow: 1;
+}
+.map-item .figure {
+  background-image: url("./fix.svg");
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+  background-repeat: no-repeat;
+}
+.map {
+  flex-basis: 4fr;
+}
+.dates {
+  flex-basis: 5fr;
+  flex-grow: 1;
+  padding: 1rem;
+}
+.date {
+  padding: 1.5rem 0px;
+  display: grid;
+  grid-template-columns: repeat(9, 50px);
+  grid-auto-rows: 100%;
+  align-items: center;
+}
+.date .date-bar {
+  background-color: var(--primary-light);
+  color: #fff;
+  border-radius: 25px;
+  height: 50px;
+}
+.date .date-bar .status-bar {
+  background-color: var(--primary-dark);
+  height: 100%;
+  border-radius: 25px;
 }

@@ -155,6 +155,10 @@ main.main {
   grid-template-rows: repeat(7, 1fr);
   max-height: 80vh;
 }
+
+.boxes::-webkit-scrollbar {
+  display: none;
+}
 .box-item {
   border: 1px solid rgba(255, 255, 255, 0.2);
   min-height: 150px;
@@ -193,4 +197,7 @@ main.main {
 .three div:first-of-type {
   grid-column: 1/-1;
   grid-row: 1 / span 2;
+}
+.main-aside {
+  padding: 1rem;
 }

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-weight: normal;
+  user-select: none;
+}
+:root {
+  height: 100%;
+  --base-dark: #080613;
+  --primary-purple: #897acc;
+  --primary-blue: #342755;
+  --secondary-purple: #9f8ed4;
+  --tertiary-purple: #585cb2;
+  --primary-brown: #936156;
+  --primary-pink: #ab619e;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  background-color: var(--primary-blue);
+  color: #fff;
+}
+input,
+select,
+button {
+  font: inherit;
+  outline: none;
+}
+img {
+  max-width: 100%;
+}
+small {
+  opacity: 0.6;
+}
+@media screen and (max-width: 480px) {
+  :root {
+    font-size: 13px;
+  }
+}
+
+/* classes */
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+main.main {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(100px, 1fr));
+  flex-grow: 1;
+}
+.header {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  grid-column: 3/-1;
+}
+.search {
+  color: rgba(255, 255, 255, 0.2);
+  line-height: 1.5rem;
+  border-bottom: 2px solid;
+}
+.search [type="search"] {
+  background-color: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.2);
+}
+.search [type="search"]::placeholder {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: inherit;
+}
+.coins {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+.coins .place-img {
+  border-radius: 50%;
+}
+.coin-info {
+  display: flex;
+  align-items: center;
+}
+.coin-info span {
+  margin-left: 0.5rem;
+}
